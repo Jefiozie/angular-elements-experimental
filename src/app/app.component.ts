@@ -13,7 +13,7 @@ export class AppComponent {
   title = '?';
   async handleClick() {
     // @ts-ignore
-    (await import('./build.js')) as unknown as any;
+    (await import('../../dist/elements/combine/build.js')) as unknown as any;
     const div = document.createElement('div');
     document.body.appendChild(div);
     const demoElementWithoutBinding = document.createElement('demo-element');
